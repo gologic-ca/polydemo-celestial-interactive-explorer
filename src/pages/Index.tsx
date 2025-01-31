@@ -42,10 +42,13 @@ const Index = () => {
       {/* Sun */}
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
         <motion.div
-          className="w-24 h-24 bg-yellow-500 rounded-full"
+          className="w-24 h-24 bg-yellow-500 rounded-full planet cursor-pointer"
           animate={{ scale: [1, 1.05, 1] }}
           transition={{ duration: 2, repeat: Infinity }}
-        />
+          onClick={() => navigate("/planet/sun")}
+        >
+          <div className="planet-info">Sun</div>
+        </motion.div>
       </div>
 
       {/* Planets */}
@@ -78,7 +81,7 @@ const Index = () => {
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-center">
         <h1 className="text-4xl font-bold mb-4">Our Solar System</h1>
-        <p className="text-gray-400">Click on any planet to learn more</p>
+        <p className="text-gray-400">Click on any celestial body to learn more</p>
       </div>
     </div>
   );

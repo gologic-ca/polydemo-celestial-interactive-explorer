@@ -3,6 +3,17 @@ import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 
 const planetData = {
+  sun: {
+    name: "Sun",
+    description: "The star at the center of our Solar System.",
+    color: "#FFD700",
+    facts: [
+      "Center of our solar system",
+      "Surface temperature around 5,500°C",
+      "About 109 times wider than Earth",
+      "Makes up 99.86% of the Solar System's mass"
+    ]
+  },
   mercury: {
     name: "Mercury",
     description: "The smallest and innermost planet in the Solar System.",
