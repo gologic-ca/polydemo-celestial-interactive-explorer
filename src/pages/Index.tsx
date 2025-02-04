@@ -1,7 +1,7 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { AIChatBox } from '../components/AIChatBox';
+import AIChatBox from '../components/AIChatBox';
 
 const Index = () => {
   const navigate = useNavigate();
@@ -86,7 +86,7 @@ const Index = () => {
           <p className="text-gray-400">Click on any celestial body to learn more</p>
         </div>
       </div>
-      <AIChatBox />
+      <AIChatBox planetName="Solar System" />
     </div>
   );
 };

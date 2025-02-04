@@ -1,6 +1,8 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
+import { useState } from 'react';
+import PlaylistGenerator from '../components/PlaylistGenerator';
 
 const planetData = {
   sun: {
@@ -108,6 +110,10 @@ const Planet = () => {
   const { name } = useParams();
   const navigate = useNavigate();
   const planet = planetData[name as keyof typeof planetData];
+  const [showPlaylist, setShowPlaylist] = useState(false);
+  
+  // Capitalize first letter for display
+  const displayName = name ? name.charAt(0).toUpperCase() + name.slice(1) : '';
 
   if (!planet) {
     navigate("/");
@@ -152,6 +158,22 @@ const Planet = () => {
           ))}
         </div>
       </div>
+
+      <div className="fixed bottom-4 right-4 flex gap-4">
+        <button 
+          className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full shadow-lg transition-colors duration-200"
+          onClick={() => setShowPlaylist(true)}
+        >
+          Generate {displayName} Playlist
+        </button>
+      </div>
+
+      {showPlaylist && (
+        <PlaylistGenerator 
+          planetName={displayName}
+          onClose={() => setShowPlaylist(false)}
+        />
+      )}
     </div>
   );
 };

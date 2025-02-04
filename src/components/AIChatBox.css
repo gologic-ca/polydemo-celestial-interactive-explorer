@@ -72,4 +72,30 @@
   align-self: center;
   color: rgba(255, 255, 255, 0.6);
   font-style: italic;
+}
+
+.playlist-response {
+  white-space: pre-line;
+  font-size: 1.1em;
+}
+
+.playlist-item {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.generate-playlist-btn {
+  background: linear-gradient(45deg, #8e2de2, #4a00e0);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1em;
+  margin: 20px 0;
+  transition: transform 0.2s;
+}
+
+.generate-playlist-btn:hover {
+  transform: scale(1.05);
 } 
