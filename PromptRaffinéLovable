@@ -1,0 +1,46 @@
+## Project Name: Celestial Interactive Explorer
+
+### Project Description:
+Develop an Interactive Solar System Explorer that transports users into a static visualization of our solar system. The application will feature a stunning landing page displaying a full solar system view with all the planets. Each planet will be clickable, leading users to dedicated information pages for in-depth planetary details.
+
+### Features to Include:
+
+1. **Landing Page**
+   - Display a full solar system visualization including all the planets.
+   - The sun is centered on the screen.
+   - The other planets are set around the sun on orbits but it is important to not draw the orbit paths
+
+2. **Interactive Planet Elements**
+   - **Clickable Planets:**
+     - It is very important that each planet has an onClick() function that redirects immediately to the seperate planet page
+     - Each planet must be clickable allowing a user to click on a planet on the solar system component that redirects to the planet component
+     - Each planet directs the user to its own information page, detailing planetary characteristics and fun facts.
+
+3. **Planet Information Pages**
+   - Dedicated pages for each planet featuring:
+     - Overview and scientific data.
+     - Historical and mythological facts.
+
+4. **Modular Architecture**
+   - Separate modules for landing page, and individual information pages to promote maintainability and scalability.
+   - Utilize reusable components for UI elements and interactions.
+
+### UI/UX Design:
+
+- **Visual Theme:**
+  - **Libraries** Avoid overcomplicated libraries and limit imports. Make it as stylish as possible with out of the box styling
+  - **Clickable planets** Ensure the planet elements are not covered by any other groups or visual elements so they remain clickable by the user
+  - **Color Palette:** Deep space tones with vibrant highlights for each planet.
+  - **Typography:** Clean, modern sans-serif fonts paired with accent display fonts for titles.
+  - **Animation:** Subtle hover animations and smooth transitions that bring the celestial elements to life.
+  
+- **Layout:**
+  - **Landing Page:**
+    - Full-screen solar system visualization with centered interactive elements.
+    - Prominent instructions guiding users on how to interact with the planets.
+  - **Planet Pages:**
+    - Consistent layout with an emphasis on informative content balanced with visual media.
+    - Easy-to-navigate sections for scientific data, history, and multimedia.
+
+### Expected Output:
+A landing page displaying our solar system with clickable planets leading to individual information pages. A fully functional Celestial Interactive Explorer that captivates users with an immersive and educational journey through our solar system. The app combines an engaging UI with informative content on each planet, making it an ideal tool for astronomy enthusiasts and casual explorers alike.
