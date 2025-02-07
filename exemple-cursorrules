@@ -1,0 +1,33 @@
+# .cursorrules - Guidelines for optimizing queries and performance
+
+## General Guidelines
+- Use React's `useMemo` and `useCallback` hooks to memoize expensive calculations and functions.
+- Avoid unnecessary re-renders by using `React.memo` for functional components.
+- Use lazy loading with `React.lazy` and `Suspense` for components that are not immediately needed.
+
+## Vite Specific
+- Take advantage of Vite's fast HMR (Hot Module Replacement) to quickly test changes without full reloads.
+- Use Vite's built-in support for code splitting to load only the necessary parts of your application.
+
+## React Router
+- Use `React Router`'s `useRoutes` for dynamic routing to minimize the number of components rendered.
+- Implement route-based code splitting to load only the components needed for the current route.
+
+## Tailwind CSS
+- Use Tailwind's JIT (Just-In-Time) mode to generate only the styles you need, reducing CSS bundle size.
+- Purge unused styles in production builds to further reduce CSS size.
+
+## Data Fetching
+- Use `React Query` or similar libraries to manage server state and caching, reducing the need for repeated queries.
+- Implement pagination or infinite scrolling for large datasets to load data incrementally.
+
+## Performance Monitoring
+- Use tools like `React DevTools` and `Vite's build analysis` to identify and address performance bottlenecks.
+- Regularly audit your application's performance and update dependencies to leverage improvements.
+
+## Additional Tips
+- Minimize the use of global state; prefer local state or context where appropriate.
+- Optimize images and other assets to reduce load times.
+- Consider using a CDN for serving static assets to improve load times.
+
+# End of .cursorrules 
