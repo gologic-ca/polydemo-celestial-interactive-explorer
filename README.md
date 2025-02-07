@@ -42,8 +42,15 @@ Voire .cursorrules généré avec le stack de Lovable dans le projet ou voire le
 "add an ai chatbox component. add the chatbox to the home page with the solar system. make it so messages entered in the chatbox prompt the openai api and return the respons. use the public openai api endpoint and add a placeholder for the key"
 + ajout du clé
 + itérer sur résultats
+Branche init-chatbot
+![image](https://github.com/user-attachments/assets/a4c51ee3-6ee5-4a70-aa1e-b7518f72633c)
+
 
 "add a "generate playlist" button on the planet page. when the button is clicked it should prompt the openai api the same way that the chatbot.tsx fetches. the prompt message sent should be as such "Generate a themed playlist of 10 songs that relate to ${CURRENT_PLANET}. Consider the planet's characteristics, atmosphere, and mythology. Format the response as a numbered list with "Artist - Song Title" for each entry." create a component that then displays the results"
++ ajout du clé
++ itérer sur résultats
+Branche generate-playlist
+![image](https://github.com/user-attachments/assets/dbaa5632-6367-4fbc-889a-e84d415661b9)
 
 Chaque branche représente un exemple fonctionnel atteint avec juste ces requêtes et le bouton intégrer "Fix in Composer" pour des erreurs rencontrées 
 
